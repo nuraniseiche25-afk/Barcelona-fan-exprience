@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+
+    position:absolute;
+    width:100%;
+    color:white;
+}
+
+ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.hero{
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('assets/images/stadion.webp');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    color:white;
+    margin-left:80px;
+}
+
+.hero-content h1{
+    font-size:70px;
+}
+
+.hero-content span{
+    color:#d32f2f;
+}
+
+.hero-content p{
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#d32f2f;
+    color:white;
+    cursor:pointer;
+}
+
+.logo img{
+    width: 40px;
+    height:auto
+}
