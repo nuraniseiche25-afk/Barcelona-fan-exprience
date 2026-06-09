@@ -240,10 +240,10 @@ nav ul li a:hover{
 .audio-list{
     background:
     linear-gradient(
-        rgba(0,0,0,0.85),
-        rgba(0,0,0,0.85)
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     ),
-    url('assets/images/stadion.webp');
+    url('assets/images/halaman utama audio.jpg');
 
     background-size:cover;
     background-position:center;
@@ -252,66 +252,34 @@ nav ul li a:hover{
     padding:80px 0;
 }
 
-.audio-card{
-    width:700px;
+.audio-content{
+    width:85%;
 
-    margin-left:80px;
+    min-height:180px;
 
-    text-align:left;
-}
+    margin:30px auto;
 
-.audio-card:hover{
-    transform:translateY(-5px);
-    transition:0.3s;
-}
-
-.audio-card h2{
-    text-align:center;
-    margin-bottom:15px;
-}
-
-.audio-card audio{
-    width:100%;
-}
-
-.audio-container{
-    width:80%;
-    max-width:900px;
-    margin:auto;
-}
-
-.audio-card{
-    background:rgba(0,0,0,0.6);
-    padding:20px;
-    margin-bottom:20px;
-    border-radius:15px;
-    text-align:left;
-}
-
-.audio-card h2{
-    margin-bottom:15px;
-}
-
-.audio-card audio{
-    width:100%;
-}
-
-.audio-section{
-    height:100vh;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+
+    padding:0 50px;
+
+    border-radius:25px;
+
+    color:white;
+
     background-size:cover;
     background-position:center;
 }
 
-.audio-card{
-    width:500px;
-    background:rgba(0,0,0,0.7);
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    color:white;
+.audio-content h2{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.audio-content audio{
+    width:380px;
 }
 
 .audio-card audio{
@@ -319,125 +287,10 @@ nav ul li a:hover{
     margin-top:15px;
 }
 
-.anthem{
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('assets/images/anthem.jpg');
-}
-
-.chant{
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('assets/images/chant.jpg');
-}
-
-.goal{
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('assets/images/goal.jpg');
-}
-
-.atmosphere{
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('assets/images/stadium.jpg');
-}
-
 .audio-title{
-    text-align:center;
-    font-size:45px;
-    margin:80px 0 40px;
-}
-
-.audio-section{
-    height:300px;
-
-    display:flex;
-    align-items:center;
-
-    padding:0 80px;
-}
-
-.audio-content{
-    width:100%;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    background:rgba(0,0,0,0.5);
-
-    padding:30px;
-
-    border-radius:20px;
-
     color:white;
+    font-size:45px;
+    margin-left:100px;
+    margin-bottom:40px;
 }
 
-.audio-content h2{
-    font-size:30px;
-}
-
-.audio-content audio{
-    width:400px;
-}
-
-.anthem{
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('assets/images/audio/anthem.jpg');
-
-    background-size:cover;
-    background-position:center;
-}
-
-.chant{
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('assets/images/audio/chant.jpg');
-
-    background-size:cover;
-    background-position:center;
-}
-
-.goal{
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('assets/images/audio/goal.jpg');
-
-    background-size:cover;
-    background-position:center;
-}
-
-.atmosphere{
-    background:
-    linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),
-    url('assets/images/audio/stadium.jpg');
-
-    background-size:cover;
-    background-position:center;
-}
