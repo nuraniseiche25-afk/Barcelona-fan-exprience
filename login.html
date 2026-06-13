@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="login-page">
+
+    <div class="login-box">
+
+        <h1>Login</h1>
+
+        <input type="text" id="username" placeholder="Username">
+
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">
+            Masuk
+        </button>
+
+    </div>
+
+</section>
+
+<script>
+
+function login(){
+
+    let username =
+    document.getElementById("username").value;
+
+    let password =
+    document.getElementById("password").value;
+
+    if(username === "FansBarca" && password === "slalu di 1"){
+
+        window.location.href = "home.html";
+
+    }else{
+
+        alert("Username atau Password salah!");
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
+    
+</body>
+</html>
