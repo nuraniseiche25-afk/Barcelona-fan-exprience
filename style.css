@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+
+    position:absolute;
+    width:100%;
+    color:white;
+}
+
+ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.hero{
+    height:100vh;
+
+    background-image:
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url('assets/images/stadion.webp');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    color:white;
+    margin-left:80px;
+}
+
+.hero-content h1{
+    font-size:70px;
+}
+
+.hero-content span{
+    color:#d32f2f;
+}
+
+.hero-content p{
+    margin-top:15px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#d32f2f;
+    color:white;
+    cursor:pointer;
+}
+
+.logo img{
+    width: 50px;
+    height:auto
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#d32f2f;
+}
+
+.about,
+.players,
+.trophy{
+    padding:100px 80px;
+    color:white;
+}
+
+.about{
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url('assets/images/stadion.webp');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.players{
+    background:#a50044;
+}
+
+.trophy{
+    background:#004d98;
+}
+
+.about h2,
+.players h2,
+.trophy h2{
+    margin-bottom:20px;
+    font-size:40px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+.about h2::after,
+.players h2::after,
+.trophy h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#d32f2f;
+    margin-top:10px;
+}
+
+.player-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:30px;
+    flex-wrap:wrap;
+}
+
+.player-card{
+    text-align:center;
+}
+
+.player-card img{
+    width:250px;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.player-card h3{
+    margin-top:10px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:15px;
+}
+
+.quote-section{
+    height:70vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url('assets/images/stadion.webp');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+}
+
+.quote-section h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.quote-section p{
+    font-size:24px;
+    max-width:700px;
+}
+
+.active{
+    color:#d32f2f;
+    font-weight:bold;
+    border-bottom:3px solid #d32f2f;
+    padding-bottom:5px;
+}
+
+.audio-hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url('assets/images/halaman utama audio.jpg');
+
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.audio-hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.audio-hero p{
+    font-size:22px;
+    max-width:700px;
+    margin-top:15px;
+}
+
+.audio-list{
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url('assets/images/halaman utama audio.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    padding:80px 0;
+}
+
+.audio-content{
+    width:85%;
+
+    min-height:180px;
+
+    margin:30px auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+
+    border-radius:25px;
+
+    color:white;
+
+    background-size:cover;
+    background-position:center;
+}
+
+.audio-content h2{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.audio-content audio{
+    width:380px;
+}
+
+.audio-card audio{
+    width:100%;
+    margin-top:15px;
+}
+
+.audio-title{
+    color:white;
+    font-size:45px;
+    margin-left:100px;
+    margin-bottom:40px;
+}
+
+/* LOGIN PAGE */
+
+.login-page{
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
+    ),
+    url('assets/images/stadion.webp');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-box{
+    width:400px;
+
+    background:rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(10px);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    color:white;
+}
+
+.login-box h1{
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border:none;
+
+    border-radius:8px;
+}
+
+.login-box button{
+    margin-top:20px;
+    width:100%;
+}
