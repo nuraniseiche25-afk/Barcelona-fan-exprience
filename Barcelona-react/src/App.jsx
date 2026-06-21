@@ -2,6 +2,7 @@ import './App.css'
 import Login from './login'
 import Home from './home'
 import Audio from './audio'
+import Player from './player';
 import { useState } from 'react'
 
 function App() {
@@ -22,7 +23,12 @@ function App() {
   }
   if (halaman === "audio") {
     return (
-      <Audio />
+      <Audio setHalaman={setHalaman} />
+    )
+  }
+  if (halaman === "player") {
+    return (
+      <Player setHalaman={setHalaman} />
     )
   }
 
@@ -49,3 +55,4 @@ function App() {
 }
 
 export default App
+

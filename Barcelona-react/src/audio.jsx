@@ -3,10 +3,10 @@ import goal from "./assets/audio/Goal Celebration.mp3"
 import stadion from "./assets/audio/Stadion Atmosphere.mp3"
 import chant from "./assets/audio/Supporters Chant.mp3"
 
-import bgAudio from "./assets/images/halaman utama audio.jpg"
-import logo from "./assets/images/logo.barca.png"
+import bgAudio from "./assets/home/halaman utama audio.jpg"
+import logo from "./assets/home/logo.barca.png"
 
-function Audio() {
+function Audio({ setHalaman}) {
   return (
     <>
       <nav>
@@ -15,10 +15,29 @@ function Audio() {
         </div>
 
         <ul>
-          <li><a href="#">Beranda</a></li>
-          <li><a className="active" href="#">Audio</a></li>
-          <li><a href="#">Pemain</a></li>
-          <li><a href="#">Trofi</a></li>
+          <li>
+  <a onClick={() => setHalaman("beranda")}>
+    Beranda
+  </a>
+</li>
+
+<li>
+  <a className="active">
+    Audio
+  </a>
+</li>
+
+<li>
+  <a onClick={() => setHalaman("player")}>
+    Pemain
+  </a>
+</li>
+
+<li>
+  <a onClick={() => setHalaman("trofi")}>
+    Trofi
+  </a>
+</li>
           <li><a href="#">Momen</a></li>
           <li><a href="#">Stadion</a></li>
         </ul>
