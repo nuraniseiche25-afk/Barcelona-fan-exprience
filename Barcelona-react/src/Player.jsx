@@ -402,7 +402,7 @@ const [showDetail, setShowDetail] =
         {players.map((player) => (
 
           <div
-            className="player-card"
+            className="slider-card"
             key={player.name}
             onClick={() =>
               setSelectedPlayer(player)
