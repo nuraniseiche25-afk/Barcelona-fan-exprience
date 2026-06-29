@@ -3,6 +3,7 @@ import Login from './login'
 import Home from './home'
 import Audio from './audio'
 import Player from './player';
+import Trofi from './Trofi';
 import { useState } from 'react'
 
 function App() {
@@ -29,6 +30,12 @@ function App() {
   if (halaman === "player") {
     return (
       <Player setHalaman={setHalaman} />
+    )
+  }
+
+  if (halaman === "trofi") {
+    return (
+      <Trofi setHalaman={setHalaman} />
     )
   }
 

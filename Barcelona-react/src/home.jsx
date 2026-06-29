@@ -30,16 +30,30 @@ function Home({ setHalaman }) {
             </a>
           </li>
 
-          <li>
-            <a href="#">
-              Pemain
-            </a>
-          </li>
+
 
           <li>
-            <a href="#">
-              Trofi
-            </a>
+  <a
+    href="#"
+    onClick={(e) => {
+      e.preventDefault();
+      setHalaman("player");
+    }}
+  >
+    Pemain
+  </a>
+</li>
+
+          <li>
+            <a
+              href="#"
+              onClick={(e) => {
+              e.preventDefault()
+              setHalaman("trofi")
+            }}
+          >
+             Trofi
+           </a>
           </li>
 
           <li>

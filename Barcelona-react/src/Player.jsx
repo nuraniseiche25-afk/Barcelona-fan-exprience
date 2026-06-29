@@ -356,8 +356,10 @@ const [showDetail, setShowDetail] =
       </li>
 
       <li>
-        <a>Trofi</a>
-      </li>
+  <a onClick={() => setHalaman("trofi")}>
+    Trofi
+  </a>
+</li>
 
       <li>
         <a>Momen</a>

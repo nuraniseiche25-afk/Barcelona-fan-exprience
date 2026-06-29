@@ -8,6 +8,10 @@ body{
     font-family:Arial, sans-serif;
 }
 
+
+/* ===========================
+   LANDING PAGE & HOME
+=========================== */
 nav{
     display:flex;
     justify-content:space-between;
@@ -206,6 +210,10 @@ nav ul li a:hover{
     padding-bottom:5px;
 }
 
+
+/* ===========================
+   AUDIO PAGE
+=========================== */
 .audio-hero{
     min-height:100vh;
 
@@ -294,6 +302,10 @@ nav ul li a:hover{
     margin-bottom:40px;
 }
 
+
+/* ===========================
+   LOGIN PAGE
+=========================== */
 .login-page{
     height:100vh;
 
@@ -349,6 +361,10 @@ nav ul li a:hover{
     width:100%;
 }
 
+
+/* ===========================
+   PLAYER PAGE
+=========================== */
 .player-section{
   min-height:100vh;
   background:#07152d;
@@ -487,6 +503,10 @@ nav ul li a:hover{
   margin-top:10px;
 }
 
+
+/* ===========================
+   PLAYER DETAIL
+=========================== */
 .detail-page{
   min-height:100vh;
   background:#07152d;
@@ -563,4 +583,312 @@ nav ul li a:hover{
   text-align: left;
   white-space: pre-line;
   line-height: 1.8;
+}
+
+
+/* ===========================
+   TROPHY ROOM
+=========================== */
+.trofi-page{
+    min-height:100vh;
+    background:linear-gradient(180deg,#07152b,#0d2248);
+    color:white;
+    padding:30px 60px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    width:65px;
+}
+
+.navbar ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.navbar li{
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar li:hover{
+    color:#f4c430;
+}
+
+.trofi-page .active{
+    color:#f4c430;
+}
+
+.trofi-header{
+    text-align:center;
+    margin-top:50px;
+}
+
+.trofi-header h1{
+    font-size:52px;
+    color:#f4c430;
+    letter-spacing:2px;
+}
+
+.trofi-header p{
+    margin-top:10px;
+    color:#d7d7d7;
+    font-size:18px;
+}
+
+.trofi-container{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:25px;
+    flex-wrap:wrap;
+
+    margin-top:50px;
+}
+
+.trofi-card{
+    width:180px;
+    background:#111c3a;
+
+    border:2px solid #d8a73c;
+    border-radius:15px;
+
+    text-align:center;
+
+    padding:20px;
+
+    transition:.3s;
+}
+
+.trofi-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(255,215,0,.5);
+}
+
+.trofi-card img{
+    width:110px;
+    height:150px;
+    object-fit:contain;
+
+    margin-bottom:15px;
+}
+
+.trofi-card h3{
+    font-size:22px;
+    margin-top:10px;
+    min-height:60px;
+}
+
+.trofi-card h2{
+    color:#f4c430;
+    font-size:45px;
+    margin-top:10px;
+}
+
+.trofi-card p{
+    color:#ddd;
+}
+
+.trofi-button{
+    display:flex;
+    justify-content:center;
+
+    margin-top:45px;
+}
+
+.trofi-button button{
+    background:#0b1d4a;
+
+    border:2px solid #d8a73c;
+
+    color:#f4c430;
+
+    padding:14px 35px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.trofi-button button:hover{
+    background:#d8a73c;
+    color:#07152d;
+}
+
+
+/* ===========================
+   DETAIL PERJALANAN TROPHY ROOM
+=========================== */
+.trofi-detail-page{
+    min-height:100vh;
+    background:#07152d;
+    color:white;
+    padding:40px;
+}
+
+.trofi-detail-box{
+    display:flex;
+    gap:40px;
+    margin-top:30px;
+}
+
+.trofi-sidebar{
+    width:260px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sidebar-item{
+
+    background:#12325f;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.sidebar-item:hover{
+
+    background:#f4c430;
+
+    color:black;
+
+}
+
+.trofi-content{
+
+    flex:1;
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.trofi-content img{
+
+    width:220px;
+
+}
+
+.detail-navigation{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.active-sidebar{
+
+background:#f4c430;
+
+color:#000;
+
+font-weight:bold;
+
+transform:scale(1.05);
+
+}
+
+.detail-header{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.detail-header h1{
+
+font-size:48px;
+
+color:#f4c430;
+
+}
+
+.detail-header p{
+margin-top:10px;
+font-size:18px;
+color:#dcdcdc;
+}
+
+.trofi-content{
+background:#102a55;
+padding:40px;
+border-radius:25px;
+box-shadow:0 0 30px rgba(0,0,0,.4);
+}
+
+.trofi-content img{
+
+width:260px;
+
+transition:.4s;
+
+}
+
+.trofi-content img:hover{
+
+transform:scale(1.08);
+
+}
+
+.detail-navigation button{
+    width:170px;
+    padding:14px 0;
+    border:none;
+    border-radius:12px;
+    background:#f4c430;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.detail-navigation button:hover{
+    transform:scale(1.05);
+}
+
+.trofi-content h1{
+    font-size:42px;
+    font-weight:bold;
+    color:white;
+    margin-bottom:8px;
+}
+
+.trofi-content h2{
+    font-size:46px;
+    color:#f4c430;
+    margin-bottom:15px;
+}
+
+.tahun-title{
+    color:#f4c430;
+    margin-top:20px;
+    margin-bottom:8px;
+    font-size:22px;
 }
