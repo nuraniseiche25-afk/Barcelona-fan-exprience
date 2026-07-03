@@ -361,9 +361,9 @@ const [showDetail, setShowDetail] =
   </a>
 </li>
 
-      <li>
-        <a>Momen</a>
-      </li>
+     <li onClick={() => setHalaman("moment")}>
+  Momen
+</li>
 
       <li>
         <a>Stadion</a>

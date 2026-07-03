@@ -597,13 +597,24 @@ nav ul li a:hover{
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
+    padding:20px 60px;
+    background:rgba(7,21,43,.9);
+
+    z-index:1000;
+    box-sizing:border-box;
 }
 
 .logo img{
-    width:65px;
+    width:90px;
 }
 
 .navbar ul{
@@ -621,6 +632,12 @@ nav ul li a:hover{
 
 .navbar li:hover{
     color:#f4c430;
+}
+
+.navbar .active{
+    color:#d81f26;
+    border-bottom:2px solid #d81f26;
+    padding-bottom:5px;
 }
 
 .trofi-page .active{
@@ -739,7 +756,8 @@ nav ul li a:hover{
 }
 
 .trofi-detail-box{
-    display:flex;
+    display:grid;
+    grid-template-columns:260px 1fr;
     gap:40px;
     margin-top:30px;
 }
@@ -891,4 +909,140 @@ transform:scale(1.08);
     margin-top:20px;
     margin-bottom:8px;
     font-size:22px;
+}
+
+
+/* ===========================
+   MOMENT PAGE
+=========================== */
+
+.moment-page{
+    min-height:100vh;
+    background:#07152d;
+    color:white;
+    padding:120px 50px 50px;
+}
+
+.moment-page{
+    min-height:100vh;
+    background:#07152d;
+    color:white;
+    padding:120px 50px 50px;
+}
+
+.moment-header{
+    text-align:left;
+    margin-top:120px;
+    margin-left:40px;
+    margin-bottom:40px;
+}
+
+.moment-header h1{
+    font-size:64px;
+    font-weight:800;
+    margin:0;
+}
+
+.moment-header p{
+    margin-top:10px;
+    color:#d0d0d0;
+}
+
+.moment-container{
+    display:flex;
+    gap:40px;
+}
+
+
+.timeline-item{
+    width: 90px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.timeline-item::after{
+    content:"";
+    position:absolute;
+    left:8px;
+    top:18px;
+    bottom:-35px;
+    width:3px;
+    background:#4b5ca8;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff3d6e;
+    z-index: 2;
+}
+
+.timeline-item span {
+    margin-left: 18px;
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.dot{
+    width:16px;
+    height:16px;
+    background:#d62d5d;
+    border-radius:50%;
+}
+
+
+
+.moment-list{
+    flex:1;
+}
+
+.moment-row{
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.moment-card{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b3769;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.moment-card img{
+    width:180px;
+    border-radius:12px;
+}
+
+.moment-text h2{
+    margin-bottom:10px;
+}
+
+.moment-text p{
+    color:#d9d9d9;
+    line-height:1.6;
+}
+
+.last::after{
+    display:none;
+}
+
+.moment-row:last-child .timeline-item {
+    transform: translateY(50px);
+}
+
+.moment-row:last-child .timeline-item::before{
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: -56px;     
+    width: 3px;
+    height: 65px;    
+    background: #4b5ca8;
 }

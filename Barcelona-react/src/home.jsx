@@ -57,10 +57,16 @@ function Home({ setHalaman }) {
           </li>
 
           <li>
-            <a href="#">
-              Momen
-            </a>
-          </li>
+  <a
+    href="#"
+    onClick={(e) => {
+      e.preventDefault();
+      setHalaman("moment");
+    }}
+  >
+    Momen
+  </a>
+</li>
 
           <li>
             <a href="#">

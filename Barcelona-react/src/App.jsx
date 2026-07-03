@@ -3,6 +3,7 @@ import Login from './login'
 import Home from './home'
 import Audio from './audio'
 import Player from './player';
+import Moment from './Moment';
 import Trofi from './Trofi';
 import { useState } from 'react'
 
@@ -39,6 +40,12 @@ function App() {
     )
   }
 
+  if (halaman === "moment") {
+  return (
+    <Moment setHalaman={setHalaman} />
+  )
+}
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -60,6 +67,7 @@ function App() {
     </section>
   )
 }
+
 
 export default App
 

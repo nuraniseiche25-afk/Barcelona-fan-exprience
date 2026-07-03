@@ -38,7 +38,9 @@ function Audio({ setHalaman}) {
     Trofi
   </a>
 </li>
-          <li><a href="#">Momen</a></li>
+          <li onClick={() => setHalaman("moment")}>
+  Momen
+</li>
           <li><a href="#">Stadion</a></li>
         </ul>
       </nav>

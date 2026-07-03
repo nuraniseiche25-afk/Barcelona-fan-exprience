@@ -221,9 +221,9 @@ trofi[currentIndex+1]
             Trofi
           </li>
 
-          <li>
-            Momen
-          </li>
+          <li onClick={() => setHalaman("moment")}>
+  Momen
+</li>
 
           <li>
             Stadion
