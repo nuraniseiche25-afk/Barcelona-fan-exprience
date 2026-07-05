@@ -5,7 +5,9 @@ import Audio from './audio'
 import Player from './player';
 import Moment from './Moment';
 import Trofi from './Trofi';
+import VirtualTour from "./VirtualTour";
 import { useState } from 'react'
+
 
 function App() {
   const [halaman, setHalaman] = useState("landing")
@@ -44,6 +46,12 @@ function App() {
   return (
     <Moment setHalaman={setHalaman} />
   )
+}
+
+if (halaman === "stadion") {
+  return (
+    <VirtualTour setHalaman={setHalaman} />
+  );
 }
 
   return (

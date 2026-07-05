@@ -68,11 +68,9 @@ function Home({ setHalaman }) {
   </a>
 </li>
 
-          <li>
-            <a href="#">
-              Stadion
-            </a>
-          </li>
+          <li onClick={() => setHalaman("stadion")}>
+  Stadion
+</li>
         </ul>
       </nav>
 
