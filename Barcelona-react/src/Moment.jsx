@@ -65,9 +65,12 @@ function Moment({ setHalaman }) {
             Momen
           </li>
 
-          <li>
+
+           <li onClick={() => setHalaman("stadion")}>
             Stadion
           </li>
+
+         
 
         </ul>
 

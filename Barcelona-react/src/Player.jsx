@@ -365,9 +365,15 @@ const [showDetail, setShowDetail] =
   Momen
 </li>
 
-      <li>
-        <a>Stadion</a>
-      </li>
+  <li
+  onClick={() => {
+    alert("Stadion diklik");
+    setHalaman("stadion");
+  }}
+>
+  Stadion
+</li>
+  
     </ul>
   </nav>
 
